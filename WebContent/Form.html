@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Form for email</title>
+<style>
+h1{
+text-align: center;
+color:  #ade3f3;
+padding-top: 3em;
+}
+form {
+
+display :block;
+box-shadow: 15px 15px 10px #000;
+width: 250px;
+height: 300px;
+padding: 2em;
+/* Con esto lo centre al medio*/
+margin: auto;
+background-color:  #ade3f3;
+top: 50%;
+left: 50%;
+text-align: center;
+}
+input{
+width: 100%;
+display: inline-block;
+margin: 1em 0;
+font-size: 1em;
+  padding: .5em;
+}
+
+label{
+color: rgb(236, 120, 11);
+font-weight: 700;
+font-size: 2 em;
+}
+input[type="submit"]{
+  width: 100%;
+  background-color: rgb(236, 120, 11);
+  border: none;
+  padding: 1em;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  margin: 5px 0px;
+}
+input[type="submit"]:hover{
+  width: 100%;
+  background-color: black;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  margin: 5px 0px;
+}
+</style>
+</head>
+  <body>
+  
+  <!-- If I want this app tp work I will need to change configuration settings in my gmail account -->
+        <h1>User Email Verification</h1>
+        <form action="UserVerify" method="post">
+            <label>User Name</label>
+            <input type="text" name="username">
+            <label>User Email</label>
+            <input type="email" name="useremail">
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
